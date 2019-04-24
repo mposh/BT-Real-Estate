@@ -149,3 +149,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER='oscar.mpoke@gmail.com'
 EMAIL_HOST_PASSWORD='mpoke1982'
 EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
